@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Abhishek Chavan Portfolio</title>
+  <title>Abhishek Portfolio</title>
+
   <style>
     body {
-      font-family: Arial;
       margin: 0;
-      background: #f4f4f4;
-    }
-    header {
-      background: #0077b6;
+      font-family: Arial;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: white;
-      padding: 20px;
+    }
+
+    header {
       text-align: center;
+      padding: 50px;
     }
+
+    img {
+      border-radius: 50%;
+    }
+
     section {
+      margin: 20px;
       padding: 20px;
-      margin: 10px;
-      background: white;
-      border-radius: 10px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 15px;
     }
+
     h2 {
-      color: #0077b6;
+      color: #00d4ff;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.2);
+      padding: 15px;
+      margin: 10px;
+      border-radius: 10px;
     }
   </style>
 </head>
@@ -29,41 +43,31 @@
 <body>
 
 <header>
+  <img src="photo.jpg" width="120">
   <h1>Abhishek Chavan</h1>
-  <p>B.Tech Electrical Engineering | Automation Enthusiast</p>
+  <p>Electrical Engineering | PLC | SCADA | VFD</p>
 </header>
 
 <section>
   <h2>Skills</h2>
-  <ul>
-    <li>PLC (Delta, Allen Bradley, Mitsubishi, Siemens)</li>
-    <li>SCADA</li>
-    <li>VFD</li>
-    <li>Electrical Wiring</li>
-  </ul>
+  <div class="card">PLC (Delta, Siemens, Mitsubishi)</div>
+  <div class="card">SCADA</div>
+  <div class="card">VFD</div>
 </section>
 
 <section>
   <h2>Projects</h2>
-  <ul>
-    <li>Traffic Light Control using PLC</li>
-    <li>Automatic Water Level Controller</li>
-    <li>Star Delta Starter</li>
-    <li>VFD Speed Control</li>
-    <li>SCADA Monitoring System</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Certifications</h2>
-  <p>NPTEL - Basic Electrical Engineering</p>
-  <p>Poster Presentation - Optical Wireless Power Transmission</p>
+  <div class="card">Traffic Light Control</div>
+  <div class="card">Water Level Controller</div>
+  <div class="card">Star Delta Starter</div>
 </section>
 
 <section>
   <h2>9309735834</h2>
   <p>Email: abhishekchavan082@gmail.com</p>
-  <p>LinkedIn: https://www.linkedin.com/in/abhishek-chavan-73a068257</p>
+  <button onclick="window.location.href='mailto:abhishekchavan082@gmail.com'">
+    Contact Me
+  </button>
 </section>
 
 </body>
